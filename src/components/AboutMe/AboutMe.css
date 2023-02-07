@@ -1,0 +1,17 @@
+.AboutMe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: #b6eada;
+}
+
+.AboutMe-container h1 {
+  font-size: 6rem;
+}
+
+.AboutMe-container button {
+  width: 9rem;
+  height: 2.2rem;
+  margin-top: 1rem;
+}

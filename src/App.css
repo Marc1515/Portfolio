@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  background-color: #03001c;
+}
+
+.sections-container {
+  width: 80%;
+  margin-left: 20%;
+  padding: 1em;
+}
