@@ -1,3 +1,4 @@
+import { Link, animateScroll as scroll } from "react-scroll";
 import marc from "./../../assets/img/marc1.png";
 import "./Navbar.css";
 
@@ -9,16 +10,24 @@ export const Navbar = () => {
           <img src={marc} alt="" />
         </li>
         <li>
-          <a href="">About Me</a>
+          <Link to="aboutMe" spy={true} smooth={true} duration={500}>
+            Marc
+          </Link>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <Link to="experience" spy={true} smooth={true} duration={500}>
+            Experience
+          </Link>
         </li>
         <li>
-          <a href="">Portfolio</a>
+          <Link to="portfolio" spy={true} smooth={true} duration={500}>
+            Portfolio
+          </Link>
         </li>
         <li>
-          <a href="">Contact</a>
+          <Link to="contact" spy={true} smooth={true} duration={500}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

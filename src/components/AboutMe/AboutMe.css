@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 2rem;
   height: 100vh;
-  color: #b6eada;
-}
-
-.AboutMe-container h1 {
-  font-size: 6rem;
+  color: var(--color-primary-variant);
+  max-width: 50%;
 }
 
 .AboutMe-container button {
+  color: var(--color-primary-variant);
   width: 9rem;
   height: 2.2rem;
   margin-top: 1rem;
+  background-color: var(--color-primary);
 }

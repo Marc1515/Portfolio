@@ -1,4 +1,9 @@
-.experience {
-  color: #b6eada;
+.Experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
   height: 100vh;
+  color: var(--color-primary-variant);
+  max-width: 50%;
 }
