@@ -1,7 +1,98 @@
+import { useRef } from "react";
+import { MdOutlineMail } from "react-icons/md";
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsWhatsapp } from "react-icons/bs";
+import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
-  return <section id="contact">Contact</section>;
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ouxizti",
+        "template_qr86wz5",
+        form.current,
+        "I7rIef3hiIA0IY-Yg"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
+  return (
+    <section id="contact">
+      <div className="container contact__container">
+        <span className="first-word-title">Contact</span>
+        <div className="contact__options">
+          <article className="contact__option">
+            <MdOutlineMail className="contact__option-icon" />
+            <h4>Email</h4>
+            <h5>meq.1515@gmail.com</h5>
+            <a
+              href="mailto:meq.1515@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
+          </article>
+          <article className="contact__option">
+            <AiFillLinkedin className="contact__option-icon" />
+            <h4>LinkedIn</h4>
+            <h5>Marc España</h5>
+            <a
+              href="https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
+          </article>
+          <article className="contact__option">
+            <BsWhatsapp className="contact__option-icon" />
+            <h4>WhatsApp</h4>
+            <h5>+34 628246363</h5>
+            <a
+              href="whatsapp://send?phone=+34628246363"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Send a message
+            </a>
+          </article>
+        </div>
+        {/* END OF CONTACT OPTIONS */}
+        <form ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="7"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" className="btn-send">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
 };
 
 export default Contact;

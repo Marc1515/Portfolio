@@ -1,0 +1,62 @@
+.container.contact__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.container.contact__container span {
+  padding-bottom: 5rem;
+}
+
+.contact__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.contact__option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.contact__option-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/* =========== FORM =========== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
+.btn-send {
+  background-color: var(--color-bg-variant);
+  padding: 0.8rem;
+  color: var(--color-white);
+}

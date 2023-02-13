@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 2rem;
   height: 100vh;
   color: var(--color-primary-variant);
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .AboutMe-container button {
@@ -14,4 +13,8 @@
   height: 2.2rem;
   margin-top: 1rem;
   background-color: var(--color-primary);
+}
+
+.first-word-title {
+  font-size: xx-large;
 }

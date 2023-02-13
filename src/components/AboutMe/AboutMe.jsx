@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section id="aboutMe" className="AboutMe-container">
       <h1>
-        <span>Marc </span>España
+        <span className="first-word-title">Marc </span>España
       </h1>
       <h4>BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR WEB</h4>
       <span>

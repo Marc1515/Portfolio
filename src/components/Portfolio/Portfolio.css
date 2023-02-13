@@ -1,0 +1,94 @@
+.Portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--color-primary-variant);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  gap: 2rem;
+}
+
+.card {
+  width: 33%;
+  opacity: 0.5;
+  transition: all 400ms ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  opacity: 1;
+  scale: 1.03;
+}
+
+.container-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-buttons button {
+  background-color: var(--color-primary);
+  padding: 0.1rem;
+}
+
+.container-buttons button :only-child {
+  height: 2rem;
+  width: 3rem;
+  color: var(--color-white);
+}
+
+.card h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 450px) {
+  .Portfolio-container {
+    padding: 0;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    opacity: 1;
+    border: 1px solid var(--color-primary-variant);
+  }
+
+  .card:hover {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+
+  .card img {
+    height: 18rem;
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .container-buttons a {
+    padding: 0;
+  }
+}

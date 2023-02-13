@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <section id="experience" className="Experience-container">
       <h1>
-        <span>SOBRE</span> MI
+        <span className="first-word-title">SOBRE</span> MI
       </h1>
       <span>
         Empecé a despertar mi pasión por el desarrollo web hace unos 2 años. Con
