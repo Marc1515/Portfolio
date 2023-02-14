@@ -53,6 +53,18 @@
   object-fit: cover;
 }
 
+.container-pagination {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-pagination :first-child {
+  display: flex;
+  flex-direction: row;
+  color: var(--color-white);
+}
+
 @media (max-width: 450px) {
   .Portfolio-container {
     padding: 0;

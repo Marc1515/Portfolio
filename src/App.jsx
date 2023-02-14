@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar/Navbar";
 import "./App.css";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Experience from "./components/Experience/Experience";
-import Portfolio from "./components/Portfolio/Portfolio";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Contact from "./components/Contact/Contact";
 import BurguerButton from "./components/BurguerButton/BurguerButton";
 import { AppContextProvider } from "./context/appContext";
