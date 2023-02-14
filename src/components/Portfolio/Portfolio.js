@@ -30,22 +30,22 @@ const PortfolioQuestions = [
   {
     id: 4,
     nombre: "Montsia Clinic App",
-    githubURL: "https://github.com/Marc1515/learn-english",
+    githubURL: null,
     pageURL: "https://marcespana.es",
     img: montsiaClinicAppImg,
   },
   {
     id: 5,
     nombre: "Tienda Anna App",
-    githubURL: "https://github.com/Marc1515/movieapp-youtube",
-    pageURL: "https://trailer.marcespana.com",
+    githubURL: null,
+    pageURL: "https://anna.marcespana.es",
     img: annaAppImg,
   },
   {
     id: 6,
-    nombre: "We App",
-    githubURL: "https://github.com/Marc1515/openweather",
-    pageURL: "https://weather.marcespana.com",
+    nombre: "Euromafe App",
+    githubURL: null,
+    pageURL: "https://euromafe.marcespana.es",
     img: euromafeAppImg,
   },
 ];

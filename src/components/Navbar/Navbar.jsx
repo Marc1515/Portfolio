@@ -36,7 +36,7 @@ export const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Experience
+            Sobre Mi
           </Link>
         </li>
         <li>
@@ -62,7 +62,7 @@ export const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Contact
+            Contacto
           </Link>
         </li>
       </ul>

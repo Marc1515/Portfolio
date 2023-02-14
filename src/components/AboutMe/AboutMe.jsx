@@ -1,4 +1,5 @@
 import "./AboutMe.css";
+import CV from "./../../assets/MEQ.pdf";
 
 const AboutMe = () => {
   return (
@@ -10,7 +11,11 @@ const AboutMe = () => {
       <span>
         Si quiere ponerte en contacto conmigo escribeme a info@marcespana.com
       </span>
-      <button>Descarga mi CV</button>
+      <button>
+        <a href={CV} download>
+          Descarga mi CV
+        </a>
+      </button>
     </section>
   );
 };

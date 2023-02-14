@@ -32,18 +32,18 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container contact__container">
-        <span className="first-word-title">Contact</span>
+        <span className="first-word-title">Contacto</span>
         <div className="contact__options">
           <article className="contact__option">
             <MdOutlineMail className="contact__option-icon" />
-            <h4>Email</h4>
+            <h4>Correo</h4>
             <h5>meq.1515@gmail.com</h5>
             <a
               href="mailto:meq.1515@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Enviar Mensaje
             </a>
           </article>
           <article className="contact__option">
@@ -55,7 +55,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Enviar Mensaje
             </a>
           </article>
           <article className="contact__option">
@@ -67,27 +67,27 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              Enviar Mensaje
             </a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
+        <div>
+          <span>
+            Desde aqui abajo puedes enviame un coeo diectamente desde tu gmail!
+          </span>
+        </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="name" placeholder="Nombe" required />
+          <input type="email" name="email" placeholder="Email" required />
           <textarea
             name="message"
             rows="7"
-            placeholder="Your Message"
+            placeholder="Mensaje"
             required
           ></textarea>
           <button type="submit" className="btn-send">
-            Send Message
+            Enviar Mensaje
           </button>
         </form>
       </div>

@@ -5,6 +5,11 @@
   color: var(--color-primary-variant);
 }
 
+.Portfolio-container h1 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .cards-container {
   display: flex;
   flex-direction: row;
@@ -14,6 +19,10 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  align-items: center;
   width: 33%;
   opacity: 0.5;
   transition: all 400ms ease;
