@@ -43,7 +43,7 @@ const Portfolio = () => {
                 </a>
               </button>
             </div>
-            <h4>{item.nombre}</h4>
+            <h4 className="appName">{item.nombre}</h4>
           </div>
         ))}
       </div>

@@ -8,7 +8,7 @@ const AboutMe = () => {
     const options = {
       strings: ["BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR WEB"],
       typeSpeed: 50,
-      backSpeed: 20,
+      backSpeed: 50,
       loop: true,
       showCursor: false, // Opción para ocultar el cursor
     };
@@ -24,9 +24,7 @@ const AboutMe = () => {
         <span className="first-word-title">Marc </span>España
       </h1>
       <div className="auto-typed-container">
-        <h4 id="typed-heading" className="element">
-          BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR WEB
-        </h4>
+        <h4 id="typed-heading" className="element"></h4>
       </div>
       <span>
         Si quieres ponerte en contacto conmigo escribeme a meq.1515@gmail.com

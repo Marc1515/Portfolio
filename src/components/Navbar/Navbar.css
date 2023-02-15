@@ -8,13 +8,13 @@
   position: fixed;
   height: 100vh;
   background-color: var(--color-bg-variant);
-  z-index: 1;
+  z-index: 3;
   transition: all 0.6s ease;
 }
 
 .navbar.open {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100%;

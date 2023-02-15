@@ -1,4 +1,5 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import Typed from "typed.js";
 import { MdOutlineMail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
@@ -6,6 +7,20 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
+  useEffect(() => {
+    const options = {
+      strings: ["Enviar Correo"],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true,
+      showCursor: false, // Opción para ocultar el cursor
+    };
+    const typed = new Typed("#typed-heading2", options);
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -32,8 +47,22 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container contact__container">
-        <span className="first-word-title">Contacto</span>
+        <h1>
+          <span className="first-word-title">Contacto</span>
+        </h1>
         <div className="contact__options">
+          <article className="contact__option">
+            <BsWhatsapp className="contact__option-icon" />
+            <h4>WhatsApp</h4>
+            <h5>+34 628246363</h5>
+            <a
+              href="whatsapp://send?phone=+34628246363"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Enviar Mensaje
+            </a>
+          </article>
           <article className="contact__option">
             <MdOutlineMail className="contact__option-icon" />
             <h4>Correo</h4>
@@ -58,18 +87,6 @@ const Contact = () => {
               Enviar Mensaje
             </a>
           </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>+34 628246363</h5>
-            <a
-              href="whatsapp://send?phone=+34628246363"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Enviar Mensaje
-            </a>
-          </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
         <div className="explicacion-form">
@@ -77,6 +94,9 @@ const Contact = () => {
             Desde aquí abajo puedes enviame un correo diectamente desde tu
             gmail.
           </span>
+          <div className="auto-typed-container-contact">
+            <span id="typed-heading2"></span>
+          </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Nombe" required />
