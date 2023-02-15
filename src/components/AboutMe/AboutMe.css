@@ -23,3 +23,8 @@
 .first-word-title {
   font-size: xx-large;
 }
+
+.auto-typed-container {
+  height: 6rem;
+  width: 85%;
+}

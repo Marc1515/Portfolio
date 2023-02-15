@@ -8,17 +8,17 @@ const Experience = () => {
       </h1>
       <span>
         Empecé a despertar mi pasión por el desarrollo web hace unos 2 años. Con
-        la llegada de la pandemia empeze a practicar con diferentes tecnologias.
-        Tambien he trabajado 1 año con una empresa local. Mi rol era el de crear
-        una interfaz para una pagina de reservas de taquillas electrónicas
+        la llegada de la pandemia empecé a practicar con diferentes tecnologías.
+        También he trabajado 1 año con una empresa local. Mi rol era crear una
+        interfaz para una página de reservas de taquillas electrónicas.
       </span>
       <h4>
-        ACTUALMENTE ESUDIO POR MI CUENTA Y BUSCO AMPLIAR MI CAMPO LABORAL EN EL
+        ACTUALMENTE EStUDIO POR MI CUENTA Y BUSCO AMPLIAR MI CAMPO LABORAL EN EL
         MUNDO DEL DESARROLLO WEB.
       </h4>
       <span>
         Si quieres ponerte en contacto conmigo escríbeme a{" "}
-        <strong>info@marcespana.com</strong>
+        <strong>meq.1515@gmail.com</strong>
       </span>
       <span>
         Mira mi experiencia laboral en{" "}

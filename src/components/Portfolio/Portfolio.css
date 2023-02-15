@@ -3,16 +3,16 @@
   flex-direction: column;
   justify-content: center;
   color: var(--color-primary-variant);
+  padding: 0;
 }
 
-.Portfolio-container h1 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.Portfolio-container span {
+  padding-bottom: 2rem;
 }
 
 .cards-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   width: 100%;
   gap: 2rem;
@@ -23,10 +23,11 @@
   flex-direction: column;
   padding-top: 1rem;
   align-items: center;
-  width: 33%;
-  opacity: 0.5;
   transition: all 400ms ease;
   cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  border: 1px solid var(--color-primary-variant);
 }
 
 .card:hover {
@@ -34,10 +35,33 @@
   scale: 1.03;
 }
 
+.card h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card img {
+  height: 18rem;
+  width: 90%;
+  object-fit: cover;
+}
+
+.card a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .container-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.container-buttons a {
+  padding: 0;
 }
 
 .container-buttons button {
@@ -51,17 +75,6 @@
   color: var(--color-white);
 }
 
-.card h4 {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.card img {
-  height: 20rem;
-  width: 100%;
-  object-fit: cover;
-}
-
 .container-pagination {
   padding-top: 2rem;
   display: flex;
@@ -72,44 +85,4 @@
   display: flex;
   flex-direction: row;
   color: var(--color-white);
-}
-
-@media (max-width: 450px) {
-  .Portfolio-container {
-    padding: 0;
-  }
-
-  .cards-container {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .card {
-    width: 100%;
-    opacity: 1;
-    border: 1px solid var(--color-primary-variant);
-  }
-
-  .card:hover {
-    opacity: 1;
-    scale: 1;
-  }
-
-  .card a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
-  }
-
-  .card img {
-    height: 18rem;
-    width: 90%;
-    object-fit: cover;
-  }
-
-  .container-buttons a {
-    padding: 0;
-  }
 }

@@ -16,6 +16,7 @@ body {
 
 section {
   color: var(--color-primary-variant);
+  width: 90%;
 }
 
 a {
@@ -40,14 +41,16 @@ ul li {
 
 h1 {
   font-size: 6rem;
+  font-size: 2.8rem;
 }
 
 h1 span {
   color: var(--color-primary);
+  font-size: 2.8rem !important;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 button {
@@ -63,10 +66,10 @@ button {
 .sections-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
-  margin-left: 20%;
-  padding: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 .container-burguerButton {
@@ -75,32 +78,5 @@ button {
   justify-content: end;
   width: 90%;
   z-index: 6;
-}
-
-@media (max-width: 450px) {
-  .sections-container {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-  }
-
-  .container-burguerButton {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 0.8rem;
-  }
-
-  span {
-    font-size: 0.8rem;
-  }
-
-  section {
-    width: 90%;
-  }
+  padding: 1rem;
 }

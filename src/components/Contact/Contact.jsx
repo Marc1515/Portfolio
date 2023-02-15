@@ -72,9 +72,10 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <div>
+        <div className="explicacion-form">
           <span>
-            Desde aqui abajo puedes enviame un coeo diectamente desde tu gmail!
+            Desde aquí abajo puedes enviame un correo diectamente desde tu
+            gmail.
           </span>
         </div>
         <form ref={form} onSubmit={sendEmail}>

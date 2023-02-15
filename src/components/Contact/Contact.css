@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+.explicacion-form {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
 /* =========== FORM =========== */
 
 form {
@@ -59,4 +64,5 @@ textarea {
   background-color: var(--color-bg-variant);
   padding: 0.8rem;
   color: var(--color-white);
+  margin-bottom: 1rem;
 }

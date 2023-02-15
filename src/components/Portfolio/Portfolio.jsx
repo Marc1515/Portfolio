@@ -20,6 +20,11 @@ const Portfolio = () => {
       <h1>
         <span className="first-word-title">PORTFOLIO</span>
       </h1>
+      <span>
+        Aquí encontraras una variedad de Proyectoes hechos en React o en
+        Wordpress.
+      </span>
+
       <div className="cards-container">
         {displayedImages.map((item) => (
           <div key={item.id} className="card">
