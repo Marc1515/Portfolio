@@ -24,28 +24,29 @@ const Portfolio = () => {
         Aquí encontraras una variedad de Proyectoes hechos en React o en
         Wordpress.
       </span>
+      <div className="cards-wrapper">
+        <div className="cards-container">
+          {displayedImages.map((item) => (
+            <div key={item.id} className="card">
+              <img src={item.img} alt="" />
 
-      <div className="cards-container">
-        {displayedImages.map((item) => (
-          <div key={item.id} className="card">
-            <img src={item.img} alt="" />
-
-            <div className="container-buttons">
-              <button>
-                {" "}
-                <a href={item.githubURL} target="_blank">
-                  <AiFillGithub />
-                </a>
-              </button>
-              <button>
-                <a href={item.pageURL} target="_blank">
-                  <AiOutlineLink />
-                </a>
-              </button>
+              <div className="container-buttons">
+                <button>
+                  {" "}
+                  <a href={item.githubURL} target="_blank">
+                    <AiFillGithub />
+                  </a>
+                </button>
+                <button>
+                  <a href={item.pageURL} target="_blank">
+                    <AiOutlineLink />
+                  </a>
+                </button>
+              </div>
+              <h4 className="appName">{item.nombre}</h4>
             </div>
-            <h4 className="appName">{item.nombre}</h4>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
       <div className="container-pagination">
         <Stack spacing={2}>

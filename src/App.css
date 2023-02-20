@@ -40,7 +40,6 @@ ul li {
 }
 
 h1 {
-  font-size: 6rem;
   font-size: 2.8rem;
 }
 
@@ -63,11 +62,17 @@ button {
   flex-direction: column;
 }
 
+.sections-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .sections-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin: 0;
   padding: 0;
 }
@@ -79,4 +84,26 @@ button {
   width: 90%;
   z-index: 6;
   padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .container-burguerButton {
+    display: none;
+  }
+
+  h1 {
+    font-size: 4.4rem;
+  }
+
+  h1 span {
+    font-size: 4.4rem !important;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
 }

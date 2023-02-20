@@ -13,7 +13,7 @@
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
-  width: 60%;
+  max-width: 20rem;
   border-radius: 0.6em;
   overflow: hidden;
   transition: all 0.3s;
@@ -75,4 +75,18 @@
 .auto-typed-container {
   height: 6rem;
   width: 85%;
+}
+
+@media (min-width: 800px) {
+  span {
+    font-size: 1.8rem !important;
+  }
+
+  .AboutMe-container button a {
+    font-size: large;
+  }
+
+  .AboutMe-container :nth-child(2) {
+    padding-bottom: 4rem;
+  }
 }

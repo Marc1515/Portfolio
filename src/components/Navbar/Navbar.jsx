@@ -7,6 +7,13 @@ import { appContext } from "../../context/appContext";
 export const Navbar = () => {
   const { clicked, setClicked } = useContext(appContext);
 
+  const handleClick = (e) => {
+    const widthScreen = window.screen.width;
+    if (widthScreen <= 800) {
+      setClicked(!clicked);
+    }
+  };
+
   return (
     <nav className={`navbar ${clicked ? "open" : ""}`}>
       <ul>
@@ -15,9 +22,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            onClick={() => {
-              setClicked(!clicked);
-            }}
+            onClick={handleClick}
             to="aboutMe"
             spy={true}
             smooth={true}
@@ -28,9 +33,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            onClick={() => {
-              setClicked(!clicked);
-            }}
+            onClick={handleClick}
             to="experience"
             spy={true}
             smooth={true}
@@ -41,9 +44,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            onClick={() => {
-              setClicked(!clicked);
-            }}
+            onClick={handleClick}
             to="portfolio"
             spy={true}
             smooth={true}
@@ -54,9 +55,7 @@ export const Navbar = () => {
         </li>
         <li>
           <Link
-            onClick={() => {
-              setClicked(!clicked);
-            }}
+            onClick={handleClick}
             to="contact"
             spy={true}
             smooth={true}

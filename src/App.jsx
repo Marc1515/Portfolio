@@ -12,14 +12,16 @@ function App() {
     <AppContextProvider>
       <div className="App">
         <Navbar />
-        <div className="sections-container">
-          <div className="container-burguerButton">
-            <BurguerButton />
+        <div className="container-burguerButton">
+          <BurguerButton />
+        </div>
+        <div className="sections-wrapper">
+          <div className="sections-container">
+            <AboutMe />
+            <Experience />
+            <Portfolio />
+            <Contact />
           </div>
-          <AboutMe />
-          <Experience />
-          <Portfolio />
-          <Contact />
         </div>
       </div>
     </AppContextProvider>
