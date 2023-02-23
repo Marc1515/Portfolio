@@ -46,18 +46,27 @@ img {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
   .navbar {
-    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
   }
 
   .navbar ul {
-    padding-right: 2rem;
+    padding-right: 0 !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-@media (min-width: 1920px) {
-  .navbar ul {
-    padding-right: 4rem;
+  .navbar ul li a {
+    font-size: x-large;
+  }
+
+  .navbar img {
+    display: flex;
   }
 }

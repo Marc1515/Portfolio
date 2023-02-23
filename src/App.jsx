@@ -11,7 +11,9 @@ function App() {
   return (
     <AppContextProvider>
       <div className="App">
-        <Navbar />
+        <div className="navbar-container">
+          <Navbar />
+        </div>
         <div className="container-burguerButton">
           <BurguerButton />
         </div>
