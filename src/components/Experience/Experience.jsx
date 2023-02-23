@@ -13,8 +13,8 @@ const Experience = () => {
         interfaz para una página de reservas de taquillas electrónicas.
       </span>
       <h4>
-        ACTUALMENTE EStUDIO POR MI CUENTA Y BUSCO AMPLIAR MI CAMPO LABORAL EN EL
-        MUNDO DEL DESARROLLO WEB.
+        ACTUALMENTE, ESTUDIO POR MI CUENTA Y BUSCO AMPLIAR MI CAMPO LABORAL EN
+        EL MUNDO DEL DESARROLLO WEB.
       </h4>
       <span>
         Si quieres ponerte en contacto conmigo escríbeme a{" "}
