@@ -4,6 +4,7 @@ import weatherAppImg from "./../../assets/img/weatherApp.png";
 import montsiaClinicAppImg from "./../../assets/img/montsiaClinicApp.png";
 import annaAppImg from "./../../assets/img/annaApp.png";
 import euromafeAppImg from "./../../assets/img/euromafeApp.png";
+import gifsAppImg from "./../../assets/img/gifsApp.png";
 
 const PortfolioQuestions = [
   {
@@ -11,7 +12,7 @@ const PortfolioQuestions = [
     nombre: "Gifs App",
     githubURL: "https://github.com/Marc1515/gifs-app",
     pageURL: "https://gifs.marcespana.com",
-    img: learrnAppImg,
+    img: gifsAppImg,
   },
   {
     id: 2,
