@@ -28,7 +28,9 @@ const Portfolio = () => {
         <div className="cards-container">
           {displayedImages.map((item) => (
             <div key={item.id} className="card">
-              <img src={item.img} alt="" />
+              <a href={item.pageURL} target="_blank">
+                <img src={item.img} alt="" />
+              </a>
 
               <div className="container-buttons">
                 <button>
