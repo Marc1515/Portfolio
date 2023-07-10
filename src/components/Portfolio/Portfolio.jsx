@@ -46,6 +46,29 @@ const Portfolio = () => {
                 </button>
               </div>
               <h4 className="appName">{item.nombre}</h4>
+              <div className="svgContainer">
+                {!(item.id === 6 || item.id === 7 || item.id === 8 ) && item.techBuild.htmlSVG && (
+                    <img src={item.techBuild.htmlSVG} alt="" />
+                  )}
+                {!(item.id === 6 || item.id === 7 || item.id === 8 ) && item.techBuild.cssSVG && (
+                    <img src={item.techBuild.cssSVG} alt="" />
+                  )}
+                {!(item.id === 6 || item.id === 7 || item.id === 8 ) && item.techBuild.bootstrapSVG && (
+                    <img src={item.techBuild.bootstrapSVG} alt="" />
+                  )}
+                {(item.id === 1 || item.id === 2) && item.techBuild.angularSVG && (
+                  <img src={item.techBuild.angularSVG} alt="" />
+                )}
+                {(item.id === 3 || item.id === 4 || item.id === 5) && item.techBuild.reactSVG && (
+                  <img src={item.techBuild.reactSVG} alt="" />
+                )}
+                {(item.id === 6 || item.id === 7 || item.id === 8) && item.techBuild.wordpressSVG && (
+                  <img src={item.techBuild.wordpressSVG} alt="" />
+                )}
+                {(item.id === 7) && item.techBuild.wooSVG && (
+                  <img src={item.techBuild.wooSVG} alt="" />
+                )}
+              </div>
             </div>
           ))}
         </div>
