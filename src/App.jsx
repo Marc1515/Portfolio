@@ -5,6 +5,7 @@ import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Contact from "./components/Contact/Contact";
 import BurguerButton from "./components/BurguerButton/BurguerButton";
+import Technologies from "./components/Technologies/Technologies.jsx";
 import { AppContextProvider } from "./context/appContext";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <div className="sections-container">
             <AboutMe />
             <Experience />
+            <Technologies />
             <Portfolio />
             <Contact />
           </div>
