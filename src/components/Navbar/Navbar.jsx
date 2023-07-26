@@ -45,6 +45,17 @@ export const Navbar = () => {
         <li>
           <Link
             onClick={handleClick}
+            to="technologies"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Tecnologías
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={handleClick}
             to="portfolio"
             spy={true}
             smooth={true}
