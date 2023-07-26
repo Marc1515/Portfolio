@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
-  useEffect(() => {
+/*   useEffect(() => {
     const options = {
       strings: ["Enviar Correo"],
       typeSpeed: 50,
@@ -42,7 +42,7 @@ const Contact = () => {
         }
       );
     e.target.reset();
-  };
+  }; */
 
   return (
     <section id="contact">
@@ -91,7 +91,7 @@ const Contact = () => {
           </div>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <div className="form-wrapper">
+{/*         <div className="form-wrapper">
           <div className="form-container">
             <div className="explicacion-form">
               <span>
@@ -116,7 +116,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
