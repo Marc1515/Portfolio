@@ -153,11 +153,11 @@ const Technologies = () => {
       <hr className="horizontal-line" />
 
       <div className="endExplication-container">
-        <span>También tengo nociones con lenguajes como PHP y Java.</span>
+        <span>También tengo nociones con lenguajes como <strong>PHP</strong> y <strong>Java</strong>.</span>
 
-        <span>Conozco como funcionan las bases de datos relacionales y no-relacionales, aunque no tengo conocimientos profundos sobre ellas.</span>
+        <span>Conozco como funcionan las bases de datos <strong>relacionales</strong> y <strong>no-relacionales</strong>, aunque no tengo conocimientos profundos sobre ellas.</span>
 
-        <span>Sigo mejorando mis conocimientos con el Back-end, específicamente con el framework Node.js.</span>
+        <span>Sigo mejorando mis conocimientos con el <strong>Back-end</strong>, específicamente con el framework la librería <strong>Node.js</strong> y el framework <strong>Next.js</strong>.</span>
       </div>
 
 
