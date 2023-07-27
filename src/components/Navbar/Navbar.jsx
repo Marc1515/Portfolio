@@ -1,11 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-import marc from "./../../assets/img/marc1.png";
 import "./Navbar.css";
 import { appContext } from "../../context/appContext";
 
 export const Navbar = () => {
   const { clicked, setClicked } = useContext(appContext);
+
+  useEffect(() => {
+    document.body.style.overflow = clicked ? "hidden" : "auto";
+  }, [clicked]);
 
   const handleClick = (e) => {
     const widthScreen = window.screen.width;
@@ -17,9 +20,6 @@ export const Navbar = () => {
   return (
     <nav className={`navbar ${clicked ? "open" : ""}`}>
       <ul>
-        <li>
-          <img src={marc} alt="" />
-        </li>
         <li>
           <Link
             onClick={handleClick}
