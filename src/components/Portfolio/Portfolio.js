@@ -6,10 +6,13 @@ import annaAppImg from "./../../assets/img/annaApp.png";
 import euromafeAppImg from "./../../assets/img/euromafeApp.png";
 import gifsAppImg from "./../../assets/img/gifsApp.png";
 import countriesApp from "./../../assets/img/countriesApp.png";
+
 import htmlSvgIMG from "./../../assets/img/svg/html5-color.svg";
 import cssSvgIMG from "./../../assets/img/svg/css3-color.svg";
 import angularSvgIMG from "./../../assets/img/svg/angular-color.svg";
 import reactSvgIMG from "./../../assets/img/svg/react-color.svg";
+import javaScriptSvgIMG from "./../../assets/img/svg/javascript-color.svg";
+import typeScriptSvgIMG from "./../../assets/img/svg/typescript-color.svg";
 import wordpressSvgIMG from "./../../assets/img/svg/wordpress-color.svg";
 import wooSvgIMG from "./../../assets/img/svg/woo-color.svg";
 import bootstrapSvgIMG from "./../../assets/img/svg/bootstrap-color.svg";
@@ -26,10 +29,7 @@ const PortfolioQuestions = [
       angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
-      reactSVG: reactSvgIMG,
-      wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
+      typeScriptSvg: typeScriptSvgIMG,
     }
   },
   {
@@ -42,10 +42,7 @@ const PortfolioQuestions = [
       angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
-      reactSVG: reactSvgIMG,
-      wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
+      typeScriptSvg: typeScriptSvgIMG,
     }
   },
   {
@@ -55,13 +52,10 @@ const PortfolioQuestions = [
     pageURL: "https://learning.marcespana.com",
     img: learrnAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
       reactSVG: reactSvgIMG,
-      wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
+      javaScriptSvg: javaScriptSvgIMG
     }
   },
   {
@@ -71,13 +65,10 @@ const PortfolioQuestions = [
     pageURL: "https://trailers.marcespana.com",
     img: trailersAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
       reactSVG: reactSvgIMG,
-      wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
+      javaScriptSvg: javaScriptSvgIMG
     }
   },
   {
@@ -87,13 +78,10 @@ const PortfolioQuestions = [
     pageURL: "https://theweather.marcespana.com",
     img: weatherAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
       reactSVG: reactSvgIMG,
-      wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
+      javaScriptSvg: javaScriptSvgIMG
     }
   },
   {
@@ -103,13 +91,9 @@ const PortfolioQuestions = [
     pageURL: "https://montsiaclinic.marcespana.com/",
     img: montsiaClinicAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
-      reactSVG: reactSvgIMG,
       wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
     }
   },
   {
@@ -119,13 +103,10 @@ const PortfolioQuestions = [
     pageURL: "https://anna.marcespana.com/",
     img: annaAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
-      reactSVG: reactSvgIMG,
       wordpressSVG: wordpressSvgIMG,
       wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
     }
   },
   {
@@ -135,13 +116,9 @@ const PortfolioQuestions = [
     pageURL: "https://euromafe.marcespana.com",
     img: euromafeAppImg,
     techBuild: {
-      angularSVG: angularSvgIMG,
       htmlSVG: htmlSvgIMG,
       cssSVG: cssSvgIMG,
-      reactSVG: reactSvgIMG,
       wordpressSVG: wordpressSvgIMG,
-      wooSVG: wooSvgIMG,
-      bootstrapSVG: bootstrapSvgIMG
     }
   },
 ];
