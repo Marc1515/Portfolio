@@ -2,13 +2,14 @@ import { useEffect } from "react";
 import "./AboutMe.css";
 import CV from "./../../assets/MEQ.pdf";
 import Typed from "typed.js";
+import fotoPerfil from "./../../assets/img/fotoPerfil.png"
 
 const AboutMe = () => {
   useEffect(() => {
     const options = {
       strings: ["BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR WEB"],
-      typeSpeed: 50,
-      backSpeed: 50,
+      typeSpeed: 40,
+      backSpeed: 10,
       loop: true,
       showCursor: false, // Opción para ocultar el cursor
     };
@@ -20,15 +21,17 @@ const AboutMe = () => {
 
   return (
     <section id="aboutMe" className="AboutMe-container">
-      <h1>
-        <span className="first-word-title">Marc </span>España
-      </h1>
-      <div className="auto-typed-container">
-        <h4 id="typed-heading" className="element"></h4>
+      <div className="container-img">
+        {<img src={fotoPerfil} alt="" />}
       </div>
-      <span>
-        Si quieres ponerte en contacto conmigo escribeme a meq.1515@gmail.com
-      </span>
+      <div className="title-container">
+        <h1>
+          <span className="first-word-title">Marc </span>España
+        </h1>
+        <div className="auto-typed-container">
+          <h4 id="typed-heading" className="element"></h4>
+        </div>
+      </div>
       <button>
         <a href={CV} download>
           Descarga mi CV
