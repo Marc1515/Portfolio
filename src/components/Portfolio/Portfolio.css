@@ -71,7 +71,7 @@ h4 {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .svgContainer img {
@@ -129,6 +129,7 @@ h4 {
   justify-content: center;
   gap: 1rem;
   z-index: 1;
+  padding-top: 1rem;
 }
 
 .appName {
