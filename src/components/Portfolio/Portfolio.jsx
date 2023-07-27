@@ -9,7 +9,6 @@ import Stack from "@mui/material/Stack";
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const imagesPerPage = 3;
-  /* const images = PortfolioQuestions; */ // aquí irá la lista de imágenes
 
   const startIndex = (currentPage - 1) * imagesPerPage;
   const endIndex = startIndex + imagesPerPage;
@@ -17,11 +16,12 @@ const Portfolio = () => {
 
   const cardsWrapperRef = useRef(null);
 
-  useEffect(() => {
-    if (cardsWrapperRef.current) {
+  const handlePageChange = (event, value) => {
+    setCurrentPage(value);
+    if(cardsWrapperRef.current){
       cardsWrapperRef.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [currentPage]);
+  };
 
   return (
     <section id="portfolio" className="Portfolio-container">
@@ -97,7 +97,7 @@ const Portfolio = () => {
             count={Math.ceil(images.length / imagesPerPage)}
             color="secondary"
             page={currentPage}
-            onChange={(event, value) => setCurrentPage(value)}
+            onChange={handlePageChange}
           />
         </Stack>
       </div>
