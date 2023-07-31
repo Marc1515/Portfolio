@@ -28,7 +28,7 @@
   transition: var(--transition);
   width: 90%;
   max-width: 400px;
-  min-width: 320px;
+  min-width: 300px;
 }
 
 .contact__option-icon {
