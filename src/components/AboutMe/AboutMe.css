@@ -1,21 +1,71 @@
 .AboutMe-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-self: center;
+  padding-bottom: 10rem;
   height: 100vh;
   color: var(--color-primary-variant);
-  max-width: 100%;
+  width: 100%;
+}
+
+.container-img {
+  padding-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-img img {
+  position: relative;
+  width: 20rem;
+  height: auto;
+  z-index: -1;
+  opacity: .9;
+  border: 1px solid #00051c;
+  border-radius: 25%;
+}
+
+.title-container {
+  width: 100%;
+  background-color: #00051c;
+  opacity: .9;
+}
+
+.title-container h1 {
+  margin: 0;
+}
+
+.auto-typed-container {
+  height: 5rem;
+  width: 100%;
+  background-color: #00051c;
+  opacity: .9;
+}
+
+.auto-typed-container h4 {
+  margin: 0;
+  padding-top: 2rem;
+  width: 83%;
+  
+}
+
+.container-cv-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .AboutMe-container button {
   font-size: 15px;
   padding: 0.7em 2.7em;
   margin-top: 3rem;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
   max-width: 20rem;
+  width: 100%;
   border-radius: 0.6em;
   overflow: hidden;
   transition: all 0.3s;
@@ -66,41 +116,22 @@
   opacity: 0.9;
 }
 
-.container-img img {
-  position: absolute;
-  width: 20rem;
-  height: auto;
-  top: 5rem;
-  left: auto;
-  right: auto;
-  z-index: -5;
-  opacity: .9;
-  border: 1px solid #00051c;
-  border-radius: 25%;
-}
-
-.title-container {
-  background-color: #00051c;
-  opacity: .9;
-}
-
-.title-container h1 {
-  margin: 0;
-}
-
-.auto-typed-container {
-  height: 5rem;
-  width: 100%;
-  background-color: #00051c;
-  opacity: .9;
-}
-
-.auto-typed-container h4 {
-  margin: 0;
-  padding-top: 2rem;
-  width: 83%;
+@media (max-height: 750px) {
+  .container-img {
+    padding-top: 3.5rem;
+  }
   
+  .container-img img {
+    position: relative;
+    width: 15rem;
+    height: auto;
+    z-index: -5;
+    opacity: .9;
+    border: 1px solid #00051c;
+    border-radius: 25%;
+  }
 }
+
 
 @media (min-width: 800px) {
   span {

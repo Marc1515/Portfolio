@@ -32,11 +32,13 @@ const AboutMe = () => {
           <h4 id="typed-heading" className="element"></h4>
         </div>
       </div>
-      <button>
-        <a href={CV} download>
-          Descarga mi CV
-        </a>
-      </button>
+      <div className="container-cv-button">
+        <button>
+          <a href={CV} download>
+            Descarga mi CV
+          </a>
+        </button>
+      </div>
     </section>
   );
 };
