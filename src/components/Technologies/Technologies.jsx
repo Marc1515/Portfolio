@@ -157,7 +157,7 @@ const Technologies = () => {
 
         <span>Conozco como funcionan las bases de datos <strong>relacionales</strong> y <strong>no-relacionales</strong>, aunque no tengo conocimientos profundos sobre ellas.</span>
 
-        <span>Sigo mejorando mis conocimientos con el <strong>Back-end</strong>, específicamente con el framework la librería <strong>Node.js</strong> y el framework <strong>Next.js</strong>.</span>
+        <span>Sigo mejorando mis conocimientos con el <strong>Back-end</strong>, específicamente con la librería <strong>Node.js</strong> y el framework <strong>Next.js</strong>.</span>
       </div>
 
 
