@@ -118,7 +118,8 @@ button {
   }
 
   .sections-container {
-    width: 80%;
+    width: 77%;
+    padding-right: 1.5rem;
   }
 
   .navbar-container {
