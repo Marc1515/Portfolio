@@ -1,48 +1,9 @@
-import { useRef, useEffect } from "react";
-import Typed from "typed.js";
 import { MdOutlineMail } from "react-icons/md";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsWhatsapp } from "react-icons/bs";
-import emailjs from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
-/*   useEffect(() => {
-    const options = {
-      strings: ["Enviar Correo"],
-      typeSpeed: 50,
-      backSpeed: 50,
-      loop: true,
-      showCursor: false, // Opción para ocultar el cursor
-    };
-    const typed = new Typed("#typed-heading2", options);
-    return () => {
-      typed.destroy();
-    };
-  }, []);
-
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_ouxizti",
-        "template_qr86wz5",
-        form.current,
-        "I7rIef3hiIA0IY-Yg"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  }; */
 
   return (
     <section id="contact">
@@ -50,7 +11,6 @@ const Contact = () => {
         <h1>
           <span className="first-word-title">Contacto</span>
         </h1>
-        <div className="contact-options-wrapper">
           <div className="contact-options-container">
             <article className="contact__option">
               <BsWhatsapp className="contact__option-icon" />
@@ -89,7 +49,6 @@ const Contact = () => {
               </a>
             </article>
           </div>
-        </div>
         {/* END OF CONTACT OPTIONS */}
 {/*         <div className="form-wrapper">
           <div className="form-container">
