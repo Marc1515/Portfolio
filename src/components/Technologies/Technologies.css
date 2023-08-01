@@ -1,5 +1,11 @@
-.tech-container{
+.tech-wrapper{
     overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-container {
+    width: 100%;
 }
 
 .title-tech{
@@ -87,4 +93,23 @@
 
 .endExplication-container span {
     padding-top: 1rem;
+}
+
+@media (min-width: 800px) {
+    .tech-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    .tech-container {
+        flex: 0 0 48%;
+        max-width: 50%;
+    }
+
+    hr {
+        display: none;
+    }
 }
