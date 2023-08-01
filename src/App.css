@@ -58,6 +58,7 @@ h1 span {
 
 h4 {
   font-size: 1rem;
+  padding-bottom: 2rem;
 }
 
 button {
@@ -109,6 +110,12 @@ button {
   h5 {
     font-size: 1.2rem;
   }
+  
+  h4 {
+    padding-bottom: 3rem;
+    font-size: medium;
+  }
+
 }
 
 @media (min-width: 1000px) {
@@ -127,4 +134,19 @@ button {
     width: 20%;
     height: 100%;
   }
+
+  h4 {
+    padding-bottom: 3rem;
+    font-size: medium;
+  }
 }
+
+@media (min-width: 1440px) {
+
+  h4 {
+    padding-bottom: 3rem;
+    font-size: large;
+  }
+}
+
+

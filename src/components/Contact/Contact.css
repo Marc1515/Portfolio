@@ -99,7 +99,7 @@ textarea {
   }
 
   .explicacion-form :first-child {
-    font-size: large !important;
+    font-size: large;
   }
 }
 

@@ -109,7 +109,29 @@
         max-width: 50%;
     }
 
+    span {
+        font-size: large;
+    }
+
     hr {
         display: none;
     }
+}
+
+@media (min-width: 1440px) {
+
+
+    .tech-container {
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
+
+    .endExplication-container {
+        padding-top: 5rem;
+    }
+
+    span {
+        font-size: medium;
+    }
+
 }

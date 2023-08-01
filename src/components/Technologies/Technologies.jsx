@@ -106,7 +106,7 @@ const Technologies = () => {
         </div>
 
 
-        <hr className="horizontal-line" />
+        <hr className="horizontal-line-3" />
 
 
         {/* Sección -> React y Angular */}
