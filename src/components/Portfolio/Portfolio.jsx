@@ -29,7 +29,7 @@ const Portfolio = () => {
         <span className="first-word-title">PORTFOLIO</span>
       </h1>
       <span>
-        Aquí encontraras una variedad de Proyectos hechos en tanto en Angular,
+        Aquí encontraras una variedad de Proyectos hechos en Angular,
         React o Wordpress.
       </span>
       <div className="cards-wrapper" ref={cardsWrapperRef}>
