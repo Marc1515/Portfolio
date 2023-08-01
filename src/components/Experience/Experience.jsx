@@ -1,8 +1,11 @@
 import "./Experience.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const Experience = () => {
   return (
     <section id="experience" className="Experience-container">
+
       <h1>
         <span className="first-word-title">SOBRE</span> MI
       </h1>
@@ -20,15 +23,18 @@ const Experience = () => {
         Si quieres ponerte en contacto conmigo escríbeme a{" "}
         <strong>meq.1515@gmail.com</strong>
       </span>
-      <span>
-        Mira mi experiencia laboral en{" "}
-        <a
-          href="https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/"
-          target="_blank"
-        >
-          LinkedIn
+
+      <div className="social-medias-container">
+        <a href="https://github.com/Marc1515" target="_blank" className="github social">
+          <FontAwesomeIcon icon={faGithub} size="2x" />
         </a>
-      </span>
+        <a href="https://www.instagram.com/marc_espp/" target="_blank" className="instagram social">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+        </a>
+        <a href="https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/" target="_blank" className="linkedin social">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+        </a>
+      </div>
     </section>
   );
 };
