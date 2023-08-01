@@ -134,8 +134,30 @@
 
 
 @media (min-width: 800px) {
+
+  .container-img {
+    padding-top: 6rem;
+  }
+
+  .container-img img {
+    width: 25rem;
+  }
+
+  .title-container {
+    padding-bottom: 0 !important;
+  }
+
   span {
     font-size: 1.8rem !important;
+  }
+
+  .container-cv-button {
+    justify-content: flex-start;
+  }
+
+  .container-cv-button button{
+    margin-top: 0;
+    padding: 1rem;
   }
 
   .AboutMe-container button a {
